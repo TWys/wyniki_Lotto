@@ -27,7 +27,7 @@ eurojackpot = [w.get_text() for w in row.find('div', class_='sortrosnaco').find_
 
 # Wypisanie wyników
 print('Ostatnie wyniki losowań:\n')
-print('Lotto z dnia {}: \t\t\t{}'.format(data_lotto, ', '.join(map(str, lotto))))
+print('Lotto z dnia {}: \t\t{}'.format(data_lotto, ', '.join(map(str, lotto))))
 print('Lotto Plus z dnia {}: \t{}'.format(data_lotto, ', '.join(map(str, lotto_plus))))
 print('Eurojackpot z dnia {}: \t{} + {}'.format(data_EJ, ', '.join(map(str, eurojackpot[0:5])),
                                                 ', '.join(map(str, eurojackpot[6:8]))))
